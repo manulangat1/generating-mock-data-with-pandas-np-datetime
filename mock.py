@@ -1,6 +1,7 @@
 import pandas as pd 
 import numpy as np 
 import datetime
+import random
 
 products = {
     'iPhone': 700,
@@ -24,3 +25,7 @@ products = {
 
 }
 columns = ['Order ID','Product','Quantity Order','Price','Ordered Date','Purchase Address']
+
+df = pd.DataFrame(columns=columns)
+print(df)
+for i in range(1000):
